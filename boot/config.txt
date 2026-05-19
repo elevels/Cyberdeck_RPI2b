@@ -1,0 +1,19 @@
+# Enable SPI and UART
+dtparam=spi=on
+enable_uart=1
+
+# Disable overscan for correct TFT alignment
+disable_overscan=1
+
+# Allow two framebuffers: HDMI + TFT
+max_framebuffers=2
+
+# TFT overlay settings
+dtoverlay=piscreen,speed=16000000,rotate=270,fps=20
+
+# Optional: HDMI output can be disabled or left as fallback
+# hdmi_force_hotplug=1
+# hdmi_group=2
+# hdmi_mode=87
+# hdmi_cvt 480 320 60 6 0 0 0
+# hdmi_drive=2
